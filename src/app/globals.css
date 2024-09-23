@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@layer base {
+
+    @font-face {
+        font-family: "Clash Display";
+        src: url("./../../public/fonts/ClashDisplay-Variable.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Helvetica Now Display";
+        src: url("./../../public/fonts/HelveticaNowDisplay-Regular.woff") format("truetype");
+    }
+
+    h1 {
+        @apply text-4xl sm:text-[4rem] text-white sm:leading-[4.5rem] font-semibold font-clash
+    }
+
+    h2 {
+        @apply text-subheading text-[32px] leading-[36px] sm:text-5xl sm:leading-[4.5rem] font-semibold font-clash
+    }
+
+    h3 {
+        @apply text-xl sm:text-2xl font-display font-bold
+    }
+
+    p {
+        @apply font-medium text-sm sm:text-base font-display
+    }
+
+    img {
+        @apply w-full h-auto object-cover;
+    }
+
+    section {
+        @apply mb-[100px] sm:mb-[10.5rem]
+    }
+}
+
+
+/* Button styling ------- */
+
+@layer components {
+
+    .btn {
+        @apply font-display font-bold block;
+    }
+
+    .btn_primary {
+        @apply rounded-[0.625rem] text-primary bg-primarybg py-3 ps-6 pe-[1.125rem] text-xl font-bold font-display;
+    }
+
+    .btn_secondary {
+        @apply rounded-[0.625rem] text-secondary bg-secondarybg py-3 ps-6 pe-[1.125rem];
+    }
+
+    .map_image {
+        @apply w-9 h-auto
+    }
+
+    .display-none {
+        @apply hidden
+    }
+
+    /* .container {
+        @apply border-2 border-red-900
+    } */
+}
+
+@layer utilities {
+
+    .container .slick-slider .slick-list .slick-track {
+        @apply flex gap-8
+    }
+
+    .container .slick-slider .slick-prev::before {
+        @apply max-sm:hidden;
+    }
+
+    .container .slick-slider .slick-next::before {
+        @apply max-sm:hidden;
+    }
+
+    /* .border-hover {
+        content: '*';
+        position: absolute;
+        left: 0px;
+        top: 15px;
+    } */
+
+    .border-hover {
+        position: relative;
+    }
+
+    .border-hover::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: red;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .border-hover:hover::after {
+        width: 100%;
+    }
+
+}
