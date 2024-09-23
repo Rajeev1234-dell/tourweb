@@ -32,7 +32,7 @@ function HeroTab({ data, btn }: tabprops) {
       <div className="w-full bg-white flex max-sm:flex-col max-base:flex-wrap gap-[20px] p-6 rounded-b-xl max-base:rounded-e-none rounded-e-xl md:justify-between">
         {data.map((item, index) => {
           return (
-            <div className="w-fit max-sm:m-auto">
+            <div className="w-fit max-sm:m-auto" key={index}>
               <div className="flex items-center gap-[8px]">
                 <p className="text-xl font-bold text-primary max-sm:m-auto ">
                   {item.inputs}

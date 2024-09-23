@@ -14,7 +14,10 @@ function FooterItem({ item }: itemprops) {
           <p className="font-bold">{item.title}</p>
           <ul className="mt-5">
             {item.links.map((links, index) => (
-              <li className="mt-5 font-medium text-base text-cardtext font-display">
+              <li
+                className="mt-5 font-medium text-base text-cardtext font-display"
+                key={index}
+              >
                 <Link href="/" className="border-hover">
                   {links}
                 </Link>

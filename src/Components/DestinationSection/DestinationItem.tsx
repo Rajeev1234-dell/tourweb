@@ -31,7 +31,10 @@ function DestinationItem({ items }: itemsprops) {
     <div className="container mt-[42px]">
       <Slider {...settings}>
         {items?.map((item, index) => (
-          <div className="pb-9 rounded-3xl relative box border-[1px]">
+          <div
+            className="pb-9 rounded-3xl relative box border-[1px]"
+            key={index}
+          >
             <div className="flex gap-2 items-center bg-mapbtn absolute top-8 right-5 px-5 rounded-xl py-1">
               <Image
                 src={item.star}

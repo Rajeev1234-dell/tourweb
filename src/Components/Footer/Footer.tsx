@@ -31,6 +31,7 @@ function Footer({ footerdata }: footerprops) {
             <div className="flex gap-x-3 max-sm:justify-center">
               {footerdata.icons.map((social, index) => (
                 <Image
+                  key={index}
                   src={social.src}
                   alt=""
                   width={100}

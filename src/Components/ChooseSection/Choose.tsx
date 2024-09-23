@@ -16,7 +16,7 @@ function Choose({ choosedata }: props) {
       <div className="flex flex-col sm:flex-row gap-11 sm:gap-[5.375rem] mt-[3.625rem]">
         {choosedata.items.map((item, index) => {
           return (
-            <div className="text-center">
+            <div className="text-center" key={index}>
               <Image
                 src={item.icon}
                 alt=""

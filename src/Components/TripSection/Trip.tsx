@@ -16,7 +16,10 @@ function Trip({ tripdata }: props) {
           </h2>
           <p className="mt-7 text-cardtext">{tripdata.desc}</p>
           {tripdata.instruction?.map((content, index) => (
-            <div className="mt-5 flex gap-4 items-start max-sm:mt-[50px]">
+            <div
+              className="mt-5 flex gap-4 items-start max-sm:mt-[50px]"
+              key={index}
+            >
               <span className="bg-primarybg py-2 px-4 rounded-lg text-2xl font-medium">
                 {content.no}
               </span>

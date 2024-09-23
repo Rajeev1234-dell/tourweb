@@ -42,8 +42,11 @@ function TravelerSection({ traveldata }: props) {
         <div className="w-full flex gap-6 mt-[44px]">
           <div className="container">
             <Slider {...settings}>
-              {traveldata.items?.map((item) => (
-                <div className="w-full px-4 pb-6 pt-4 bg-white rounded-3xl">
+              {traveldata.items?.map((item, index) => (
+                <div
+                  className="w-full px-4 pb-6 pt-4 bg-white rounded-3xl"
+                  key={index}
+                >
                   <Image src={item.img} alt="" width={100} height={100} />
                   <p className="text-2xl font-bold mt-4">{item.img_desc}</p>
                   <div className="mt-11 flex items-center justify-between">
