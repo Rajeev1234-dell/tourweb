@@ -11,7 +11,7 @@ type itemsprops = {
   items: placetype["items"];
 };
 function DestinationItem({ items }: itemsprops) {
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,

@@ -46,7 +46,7 @@ function HeroSection({ herodata }: heroprops) {
           </div>
         </div>
         <div className="absolute base:bottom-[-70px] max-sm:bottom[50px] shadow-2xl rounded-b-3xl w-[80%] left-1/2 transform -translate-x-1/2">
-          <HeroTab data={herodata.tab_inputs} btn={herodata.nav_search} />
+          <HeroTab data={herodata.tab_inputs} />
         </div>
       </div>
     </section>
