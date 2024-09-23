@@ -17,9 +17,8 @@ function Partner({ data }: props) {
       </div>
       <div className="flex justify-center gap-10 sm:gap-[4rem] items-center mt-[3.25rem] flex-wrap">
         {data.brands?.map((brand, index) => (
-          <div className="">
+          <div className="" key={index}>
             <Image
-              key={index}
               src={brand.src}
               alt=""
               width={100}

@@ -11,7 +11,7 @@ type props = {
 };
 
 function TravelerSection({ traveldata }: props) {
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,

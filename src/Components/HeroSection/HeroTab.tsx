@@ -1,16 +1,15 @@
 import React from "react";
 import { herotype } from "@/TypeScript/type";
 import Image from "next/image";
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
 import search from "../../../public/Icons/Search.svg";
-import { Input } from "postcss";
 
 interface tabprops {
   data: herotype["tab_inputs"];
-  btn: herotype["nav_search"];
+  // btn: herotype["nav_search"];
 }
 
-function HeroTab({ data, btn }: tabprops) {
+function HeroTab({ data }: tabprops) {
   console.log(data);
 
   return (

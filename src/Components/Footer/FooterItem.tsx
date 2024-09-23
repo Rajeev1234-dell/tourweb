@@ -10,7 +10,7 @@ function FooterItem({ item }: itemprops) {
   return (
     <div className="flex justify-between sm:w-3/4 max-sm:mt-7 gap-9 flex-wrap">
       {item?.map((item, index) => (
-        <div>
+        <div key={index}>
           <p className="font-bold">{item.title}</p>
           <ul className="mt-5">
             {item.links.map((links, index) => (

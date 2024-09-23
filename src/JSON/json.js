@@ -1,5 +1,3 @@
-import { title } from "process";
-
 //Hero-Section ----
 export const heroSection = {
   logo: "./Logo/LOGO.svg",
